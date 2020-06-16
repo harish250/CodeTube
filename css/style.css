@@ -37,6 +37,8 @@
 
 }
 body{
+    width: 100%;
+    overflow-x: hidden;
     padding-top: 60px;
     background-color: var(--bg);
     transition: background-color 500ms ease-in-out, color 1000ms ease-in-out;
@@ -215,8 +217,14 @@ body{
       color: var(--heading);
       
   }
+  .card:hover
+  {
+      margin-top: -10px;
+      border: 2px solid var(--heading);
+  }
   .videos-section
   {
       padding-top: 100px;
   }
+
   
