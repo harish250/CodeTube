@@ -113,21 +113,27 @@ body{
 .quotes .home-icon:hover
 {
     border: 1px solid var(--heading);
-    border-radius: 10px;
+    border-radius: 20px;
     transform: scale(1.2);
+    transition: transform 1000ms;
     background-color: var(--nav-bg);   
 }
 #about-me
 {
-    
-    padding: 50px;
+    padding: 40px;
     background-color: var(--nav-bg);
 }
 .about-text
 {
     color: var(--heading);
     letter-spacing: 2px;
-    font-size: 30px;
+    line-height: 50px;
+    font-size: 35px;
+    
+}
+.about-text::selection
+{
+    background-color: var(--heading);
 }
 .about-content
 {
@@ -137,8 +143,8 @@ body{
 }
 .profile-pic
 {
-    width: 250px;
-    height: 230px;
+    width: 300px;
+    height: 290px;
     border-radius: 50%;
     margin-right: 30px;
 }
@@ -215,16 +221,30 @@ body{
   {
       background-color: var(--nav-bg);
       color: var(--heading);
-      
+      border: 2px solid var(--heading);
+      box-shadow: 0 0 10px 0 grey;
+      transition: box-shadow 800ms;
   }
   .card:hover
   {
-      margin-top: -10px;
-      border: 2px solid var(--heading);
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
   }
   .videos-section
   {
       padding-top: 100px;
   }
 
+  .made
+  {
+      text-align: center;
+  }
+  .made .made-text
+  {
+      color: var(--heading);
+      font-size: 20px;
+  }
+  .made .made-text .heart
+  {
+    color:#e25555;
+  }
   
